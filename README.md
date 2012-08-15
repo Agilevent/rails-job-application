@@ -45,7 +45,7 @@
 
 
 ##### Create a Visual Representation of Different Charges
-On the view that shows all charges (most likely /charges), create three lists with headers. 
+On the view that shows all charges (most likely the *GET /charges* route), create three lists with headers. 
 
     List 1 - 
       Header: Failed Charges
