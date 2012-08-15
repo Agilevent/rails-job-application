@@ -29,7 +29,7 @@
   
 ##### Seed 20 transactions into the system
 
-    10 Should be valid transactions:
+    10 Should be successful transactions:
       - 5 Should be valid and linked to Customer 1
       - 3 Should be linked to Customer 2
       - 1 Should be linked to Customer 3
@@ -48,7 +48,7 @@
 On the view that shows all charges (most likely /charges), create three lists with headers. 
 
     List 1 - 
-      Header: Declined Charges
+      Header: Failed Charges
       In this list set the background color of the rows to #FF0000 and list the Customers name, the charge amount and the date that the charge failed for each failed charge. 
 
     List 2 - 
@@ -58,6 +58,13 @@ On the view that shows all charges (most likely /charges), create three lists wi
     List 3 - 
       Header: Successful Charges
       In this list simply display all the charges that were succesful. 
+
+### Tests
+
+Create the following RSpec tests:
+
+  1.  Verify that there are three lists on the screen. One for Successful charges, one for failed charges and one for the disputed charges. 
+  2.  Verify that in the Successful charges list there are 10 line items. Verify that in the failed charges list there are 5 failed charges. Verify that in the disputed charges list there are failed charges. 
 
 ## Once Complete
 1. Commit and Push your code to your new repository
