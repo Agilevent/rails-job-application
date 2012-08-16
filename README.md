@@ -5,7 +5,7 @@
 
 1. Fork this repository (if you don't know how to do that, google is your friend)
 2. In the *rails-job-application* directory, scaffold a simple Rails 3 web app that models a [Charge object](https://stripe.com/docs/api#charge_object) (basically ... scaffold the charge object)
-3. Also scafoold a customer object which has a first and last name. 
+3. Also scaffold a customer object which has a first and last name. 
 
 *The charge object has a customer property, this property is the customer id from the customer model.*
 
