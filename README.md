@@ -30,7 +30,7 @@
 ##### Seed 20 transactions (charges) into the system
 
     10 Should be successful transactions:
-      - 5 Should be valid and linked to Customer 1
+      - 5 Should be linked to Customer 1
       - 3 Should be linked to Customer 2
       - 1 Should be linked to Customer 3
       - 1 Should be linked to Customer 4
