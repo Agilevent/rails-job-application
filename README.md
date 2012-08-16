@@ -27,7 +27,7 @@
       Last Name: Smith
 
   
-##### Seed 20 transactions into the system
+##### Seed 20 transactions (charges) into the system
 
     10 Should be successful transactions:
       - 5 Should be valid and linked to Customer 1
