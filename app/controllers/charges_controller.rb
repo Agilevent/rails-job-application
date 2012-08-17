@@ -2,7 +2,9 @@ class ChargesController < ApplicationController
   # GET /charges
   # GET /charges.json
   def index
-    @charges = Charge.all
+    @successful_charges = Charge.successful
+    @disputed_charges   = Charge.disputed
+    @failed_charges     = Charge.failed
 
     respond_to do |format|
       format.html # index.html.erb

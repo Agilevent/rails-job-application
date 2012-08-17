@@ -7,4 +7,8 @@ class Charge < ActiveRecord::Base
   validates :currency, :length => {:is => 3}
   
   belongs_to :customer
+  
+  scope :successful, where(:paid => true)
+  scope :failed, where("paid = ? and failure_message is not null", false )
+  scope :disputed, where(:disputed => true)
 end

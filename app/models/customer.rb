@@ -5,4 +5,8 @@ class Customer < ActiveRecord::Base
   validates :lastname, :presence => true
   
   has_many :charges
+  
+  def name
+    [firstname, lastname].reject(&:blank?).join(" ")
+  end
 end

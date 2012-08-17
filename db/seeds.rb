@@ -9,12 +9,12 @@
 Customer.destroy_all
 Charge.destroy_all
 
-c1 = Customer.create(:firstname => "Johny", :lastname => "Flow")
-c2 = Customer.create(:firstname => "Rajagopalan", :lastname => "Bhavani Shankar")
-c3 = Customer.create(:firstname => "Andrew", :lastname => "Chung")
-c4 = Customer.create(:firstname => "Mike", :lastname => "Smith")
+c1 = Customer.create(:firstname => 'Johny', :lastname => 'Flow')
+c2 = Customer.create(:firstname => 'Rajagopalan', :lastname => 'Bhavani Shankar')
+c3 = Customer.create(:firstname => 'Andrew', :lastname => 'Chung')
+c4 = Customer.create(:firstname => 'Mike', :lastname => 'Smith')
 
-atts = {:amount => 100, :fee => 2, :currency => "EGP"}
+atts = {:amount => 100, :fee => 2, :currency => 'EGP'}
 
 #10 Should be successful transactions:
 succ_atts = atts.merge({:paid => true})
@@ -29,7 +29,7 @@ succ_atts = atts.merge({:paid => true})
 
 
 # 5 Should be transactions that failed:
-fail_atts = atts.merge({:paid => false, :failure_message => "error"})
+fail_atts = atts.merge({:paid => false, :failure_message => 'error'})
 #   - 3 Should be linked to Customer 3
 3.times{ c3.charges.create(fail_atts) }
 #   - 2 Should be linked to Customer 4
