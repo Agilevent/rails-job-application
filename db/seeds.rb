@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+Customer.find_or_create_by_firstname_and_lastname(:firstname => "Johny", :lastname => "Flow")
+Customer.find_or_create_by_firstname_and_lastname(:firstname => "Rajagopalan", :lastname => "Bhavani Shankar")
+Customer.find_or_create_by_firstname_and_lastname(:firstname => "Andrew", :lastname => "Chung")
+Customer.find_or_create_by_firstname_and_lastname(:firstname => "Mike", :lastname => "Smith")
