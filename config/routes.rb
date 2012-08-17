@@ -1,4 +1,6 @@
 Stripe::Application.routes.draw do
+  resources :customers
+
   resources :charges
 
   # The priority is based upon order of creation:
