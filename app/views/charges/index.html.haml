@@ -1,38 +1,39 @@
-%h1 Failed charges
 .failed
+  %h1 Failed charges
   %table
     %tr
       %th Customer Name
       %th Amount
       %th Failed At
     - @failed_charges.each do |charge|
-      %tr
+      %tr.item
         %td= charge.customer.try(:name)
         %td= number_to_currency(charge.amount, :unit => charge.currency)
         %td= charge.created_at
 %br/
 
-%h1 Disputed charges
 .disputed
+  %h1 Disputed charges
   %table
     %tr
       %th Customer Name
       %th Amount
       %th Disputed At
     - @disputed_charges.each do |charge|
-      %tr
+      %tr.item
         %td= charge.customer.try(:name)
         %td= number_to_currency(charge.amount, :unit => charge.currency)
         %td= charge.created_at
-        
-%h1 Successful charges
-%table
-  %tr
-    %th Customer Name
-    %th Amount
-    %th Successful At
-  - @successful_charges.each do |charge|
+ 
+.successful        
+  %h1 Successful charges
+  %table
     %tr
-      %td= charge.customer.try(:name)
-      %td= number_to_currency(charge.amount, :unit => charge.currency)
-      %td= charge.created_at
+      %th Customer Name
+      %th Amount
+      %th Successful At
+    - @successful_charges.each do |charge|
+      %tr.item
+        %td= charge.customer.try(:name)
+        %td= number_to_currency(charge.amount, :unit => charge.currency)
+        %td= charge.created_at

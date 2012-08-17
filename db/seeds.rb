@@ -42,3 +42,5 @@ disputed_atts = atts.merge({:paid => false, :disputed => true})
 3.times{ c1.charges.create(disputed_atts) }
 #   - 2 should be linked to customer 2
 2.times{ c2.charges.create(disputed_atts) }
+
+
