@@ -1,0 +1,69 @@
+<%= form_for(@charge) do |f| %>
+  <% if @charge.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@charge.errors.count, "error") %> prohibited this charge from being saved:</h2>
+
+      <ul>
+      <% @charge.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :stripe_id %><br />
+    <%= f.text_field :stripe_id %>
+  </div>
+  <div class="field">
+    <%= f.label :object %><br />
+    <%= f.text_field :object %>
+  </div>
+  <div class="field">
+    <%= f.label :livemode %><br />
+    <%= f.check_box :livemode %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.number_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :currency %><br />
+    <%= f.text_field :currency %>
+  </div>
+  <div class="field">
+    <%= f.label :disputed %><br />
+    <%= f.check_box :disputed %>
+  </div>
+  <div class="field">
+    <%= f.label :fee %><br />
+    <%= f.number_field :fee %>
+  </div>
+  <div class="field">
+    <%= f.label :paid %><br />
+    <%= f.check_box :paid %>
+  </div>
+  <div class="field">
+    <%= f.label :refunded %><br />
+    <%= f.check_box :refunded %>
+  </div>
+  <div class="field">
+    <%= f.label :amount_refunded %><br />
+    <%= f.number_field :amount_refunded %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :failure_message %><br />
+    <%= f.text_field :failure_message %>
+  </div>
+  <div class="field">
+    <%= f.label :invoice %><br />
+    <%= f.text_field :invoice %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Stripe:</b>
+  <%= @charge.stripe_id %>
+</p>
+
+<p>
+  <b>Object:</b>
+  <%= @charge.object %>
+</p>
+
+<p>
+  <b>Livemode:</b>
+  <%= @charge.livemode %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @charge.amount %>
+</p>
+
+<p>
+  <b>Currency:</b>
+  <%= @charge.currency %>
+</p>
+
+<p>
+  <b>Disputed:</b>
+  <%= @charge.disputed %>
+</p>
+
+<p>
+  <b>Fee:</b>
+  <%= @charge.fee %>
+</p>
+
+<p>
+  <b>Paid:</b>
+  <%= @charge.paid %>
+</p>
+
+<p>
+  <b>Refunded:</b>
+  <%= @charge.refunded %>
+</p>
+
+<p>
+  <b>Amount refunded:</b>
+  <%= @charge.amount_refunded %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @charge.description %>
+</p>
+
+<p>
+  <b>Failure message:</b>
+  <%= @charge.failure_message %>
+</p>
+
+<p>
+  <b>Invoice:</b>
+  <%= @charge.invoice %>
+</p>
+
+
+<%= link_to 'Edit', edit_charge_path(@charge) %> |
+<%= link_to 'Back', charges_path %>

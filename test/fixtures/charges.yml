@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  stripe_id: MyString
+  object: MyString
+  livemode: false
+  amount: 1
+  currency: MyString
+  disputed: false
+  fee: 1
+  paid: false
+  refunded: false
+  amount_refunded: 1
+  description: MyString
+  failure_message: MyString
+  invoice: MyString
+
+two:
+  stripe_id: MyString
+  object: MyString
+  livemode: false
+  amount: 1
+  currency: MyString
+  disputed: false
+  fee: 1
+  paid: false
+  refunded: false
+  amount_refunded: 1
+  description: MyString
+  failure_message: MyString
+  invoice: MyString
